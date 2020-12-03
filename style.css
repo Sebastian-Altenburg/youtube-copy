@@ -1,20 +1,18 @@
 body {
-    background-color: #1F1F1F;
+    background-color: #0e0e0e;
     
 }
 .parent {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 8%;
-    /* background-color: #282828; */
-    background-color: rgba(0, 0, 255, 0.692);
+    height: 6%;
+    background-color: #131313f6;
     position: fixed;
     z-index: 1;
     
 }
 .child-left{
-    background-color: lawngreen;
     width: 20%;
     height: 50%;
     position: absolute;
@@ -22,7 +20,6 @@ body {
     
 }
 .child-middle{
-    background-color: red;
     width: 40%;
     height: 50%;
     position: absolute;
@@ -31,7 +28,6 @@ body {
     border-radius: 5px;
 }
 .child-right{
-    background-color: purple;
     width: 15%;
     height: 50%;
     position: absolute;
@@ -73,7 +69,7 @@ body {
     border-bottom-left-radius: 5px;
     padding-left: 15px;
     font-size: 1.5em;
-    border: 1px solid rgb(175, 175, 175);
+    border: 1px solid rgb(107, 107, 107);
     top: 50%;
     transform: translateY(-50%);
 }
@@ -85,7 +81,7 @@ body {
     height: 100%;
     width: 10%;
     background-color: rgb(22, 22, 22);
-    border: 1px solid rgb(175, 175, 175);
+    border: 0.5px solid rgb(107, 107,107);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -95,8 +91,12 @@ nav img{
     width: 2.2em;
 }
 
+
+
+
+/* Sidebar   ************/
 aside {
-    background-color: pink;
+    background-color: #1F1F1F;
     position: absolute;
     height: 200px;
     width: 400px;
@@ -104,41 +104,78 @@ aside {
     top: 10%;
     height: 150%;
 }
-aside div:nth-child(odd) {
-     background-color: rgb(0, 167, 233);
-}
-aside div:nth-child(even) {
-     background-color: rgb(167, 0, 233);
-}
 aside > div {
-    height: 10%;
+    position: absolute;
+    height: 8.33%;
+    width: 100%;
+}
+aside > div img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
 }
 
+aside > div >h4 {
+    position: absolute;
+    left: 52%;
+    top: 5%;
+    color: white;
+    margin: 0;
+}
+aside > div >p {
+    position: absolute;
+    left: 52%;
+    top:30%;
+    color: rgb(107, 107,107);
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+.side-1 {top: 0%;}
+.side-2 {top: 8.33%;}
+.side-3 {top: 16.66%;}
+.side-4 {top: 25%;}
+.side-5 {top: 33.32%;}
+.side-6 {top: 41.65%;}
+.side-7 {top: 49.98%;}
+.side-8 {top: 58.31%;}
+.side-9 {top: 66.64%;}
+.side-10 {top: 74.64%;}
+.side-11 {top: 82.97%;}
+.side-12 {top: 91.3%;}
 
+/**************************/
 
 main {
     position: absolute;
     top: 100px;
-    left: 50px;
+    left: 90px;
     height: 150%;
-    background-color: steelblue;
+    
 }
 .video-title h2{
+    position: relative;
+    top: 10px;
     color: white;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
 }
 .description {
     position: absolute;
     width: 100%;
-    top: 55%;
+    top: 57%;
     color: white;
-    background-color: rgb(255, 81, 0);
-    height: 22%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    height: 14%;
+    border-top: 1px solid rgb(27, 27, 27);
+    border-bottom: 1px solid rgb(27,27,27);
 }
 .logo-profile{
     position: absolute;
-    bottom: 50%;
+    bottom: 46%;
 }
 .description h3 {
     position: absolute;
@@ -148,12 +185,22 @@ main {
 .description p {
     position: absolute;
     left: 110px;
-    bottom: 10%;
+    bottom: 16%;
 }
 
 .description span {
     font-size: 0.9em;
     color: rgb(211, 211, 211);
+}
+.description button {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    height: 2.5em;
+    background-color: #0e0e0e;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .video-title p {
@@ -161,12 +208,41 @@ main {
     left: 0px;
     top: 70%;
 }
-
+/*/////////////////*/
 .commentSection {
     position: absolute;
-    height: 300px;
+    height: 28%;
     width: 100%;
     background-color: saddlebrown;
     bottom: 0;
 }
 
+.desc-1 {
+    position: absolute;
+    left: 0;
+    background-color: rgb(14, 255, 203);
+    height: 200px;
+    width: 95%;
+    border-bottom: 1px solid black;
+}
+.desc-1 div{
+    position: absolute;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    border-radius: 50%;
+}
+.desc-1 div h3 {
+    position: relative;
+    bottom: 25px;
+    left: 14px;
+    color: white;
+    font-size: 2em;
+}
+.desc-1 p {
+    position: absolute;
+    left: 80px;
+    color: rgb(148, 148, 148);
+    top: 50px;
+}
